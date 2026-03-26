@@ -1,0 +1,133 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kidney Disease</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="header" align="center">Kidney Disease Predictor</h1>
+        <hr>
+        <form method="POST"> {% csrf_token %}
+            <div>
+                <label for="age"><strong>Age:</strong></label>
+                <input type="number" id="age" name="age" placeholder="Enter age..." required>
+            </div>
+            <div>
+                <label for="bp"><strong>Blood Pressure:</strong></label>
+                <input type="number" id="bp" name="bp" placeholder="Enter blood pressure..." required>
+            </div>
+            <div>
+                <label for="sg"><strong>Specific Gravity:</strong></label>
+                <input type="number" id="sg" name="sg" step="0.01" placeholder="Enter specific gravity..." required>
+            </div>
+            <div>
+                <label for="al"><strong>Albumin:</strong></label>
+                <input type="number" id="al" name="al" placeholder="Enter albumin..." required>
+            </div>
+            <div>
+                <label for="su"><strong>Sugar:</strong></label>
+                <input type="number" id="su" name="su" placeholder="Enter sugar..." required>
+            </div>
+            <div>
+                <label for="rbc"><strong>Red Blood Cells:</strong></label>
+                <input type="number" id="rbc" name="rbc" placeholder="Enter red blood cells..." required>
+            </div>
+            <div>
+                <label for="pc"><strong>Pus Cell:</strong></label>
+                <input type="number" id="pc" name="pc" placeholder="Enter pus cell..." required>
+            </div>
+            <div>
+                <label for="pcc"><strong>Pus Cell Clumps:</strong></label>
+                <input type="number" id="pcc" name="pcc" placeholder="Enter pus cell clumps..." required>
+            </div>
+            <div>
+                <label for="ba"><strong>Bacteria:</strong></label>
+                <input type="number" id="ba" name="ba" placeholder="Enter bacteria..." required>
+            </div>
+            <div>
+                <label for="bgr"><strong>Blood Glucose Random:</strong></label>
+                <input type="number" id="bgr" name="bgr" placeholder="Enter blood glucose random..." required>
+            </div>
+            <div>
+                <label for="bu"><strong>Blood Urea:</strong></label>
+                <input type="number" id="bu" name="bu" placeholder="Enter blood urea..." required>
+            </div>
+            <div>
+                <label for="sc"><strong>Serum Creatinine:</strong></label>
+                <input type="number" id="sc" name="sc" step="0.01" placeholder="Enter serum creatinine..." required>
+            </div>
+            <div>
+                <label for="sod"><strong>Sodium:</strong></label>
+                <input type="number" id="sod" name="sod" placeholder="Enter sodium..." required>
+            </div>
+            <div>
+                <label for="pot"><strong>Potassium:</strong></label>
+                <input type="number" id="pot" name="pot" step="0.01" placeholder="Enter potassium..." required>
+            </div>
+            <div>
+                <label for="hemo"><strong>Hemoglobin:</strong></label>
+                <input type="number" id="hemo" name="hemo" step="0.1" placeholder="Enter hemoglobin..." required>
+            </div>
+            <div>
+                <label for="pcv"><strong>Packed Cell Volume:</strong></label>
+                <input type="number" id="pcv" name="pcv" placeholder="Enter packed cell volume..." required>
+            </div>
+            <div>
+                <label for="wc"><strong>White Blood Cell Count:</strong></label>
+                <input type="number" id="wc" name="wc" placeholder="Enter white blood cell count..." required>
+            </div>
+            <div>
+                <label for="rc"><strong>Red Blood Cell Count:</strong></label>
+                <input type="number" id="rc" name="rc" step="0.1" placeholder="Enter red blood cell count..." required>
+            </div>
+            <div>
+                <label for="htn"><strong>Hypertension:</strong></label>
+                <input type="number" id="htn" name="htn" placeholder="Enter hypertension..." required>
+            </div>
+            <div>
+                <label for="dm"><strong>Diabetes Mellitus:</strong></label>
+                <input type="number" id="dm" name="dm" placeholder="Enter diabetes mellitus..." required>
+            </div>
+            <div>
+                <label for="cad"><strong>Coronary Artery Disease:</strong></label>
+                <input type="number" id="cad" name="cad" placeholder="Enter coronary artery disease..." required>
+            </div>
+            <div>
+                <label for="appet"><strong>Appetite:</strong></label>
+                <input type="number" id="appet" name="appet" placeholder="Enter appetite..." required>
+            </div>
+            <div>
+                <label for="pe"><strong>Pedal Edema:</strong></label>
+                <input type="number" id="pe" name="pe" placeholder="Enter pedal edema..." required>
+            </div>
+            <div>
+                <label for="ane"><strong>Anemia:</strong></label>
+                <input type="number" id="ane" name="ane" placeholder="Enter anemia..." required>
+            </div>
+            
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div align="center">
+                <button type="submit">Submit</button>
+            </div>
+            
+        </form>
+        <br>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

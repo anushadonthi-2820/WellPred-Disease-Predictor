@@ -1,0 +1,65 @@
+.header{
+    color: green;
+    padding-top: 10px;
+}
+
+.cards{
+    padding-top: 10px;
+    height: 50%;
+    width: fit-content;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+    font-size: 24px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.result-success {
+    color: green;
+    border-color: green;
+}
+
+.result-failure {
+    color: red;
+    border-color: red;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.button-style{
+    padding-top: 10px;
+}
