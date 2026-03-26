@@ -334,12 +334,6 @@ Contributions are welcome! To improve this project:
 
 ---
 
-## 📄 License
-
-MIT License — Free to use, modify, and distribute for educational and commercial purposes.
-
----
-
 ## 👤 Author
 
 **Anusha Donthi**  
